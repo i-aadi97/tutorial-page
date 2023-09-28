@@ -13,8 +13,8 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(33.333%, auto));
   max-width: var(--max-width);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
   width: 100%;
 }
 .page-header{
@@ -89,6 +89,9 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .main{
+    padding: 1rem;
+  }
   .content {
     padding: 4rem;
   }
@@ -96,22 +99,31 @@
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
-    max-width: 320px;
+    max-width: 400px;
     text-align: center;
+    margin: 0 auto;
   }
 
   .card {
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.5rem;
   }
 
   .card h2 {
     margin-bottom: 0.5rem;
   }
+  .card p{
+    max-width: 100%;
+  }
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
+  .main{
+    padding: 2rem;
+  }
   .grid {
     grid-template-columns: repeat(2, 50%);
+    column-gap: 10px;
+    row-gap: 10px;
   }
 }

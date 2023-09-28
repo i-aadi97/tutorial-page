@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Button from "@mui/material/Button";
 const inter = Inter({ subsets: ["latin"] });
-import Modal from "react-modal"
+import Modal from "react-modal";
 
 export default function Home() {
   return (
@@ -15,17 +15,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
+        <div className={styles["page-title"]}>
+          <h1>Tutorial</h1>
+        </div>
         <div className={styles.grid}>
           <div className={styles.card}>
-            <div className={styles["video-block"]} >
+            <div className={styles["video-block"]}>
               <video>
                 <source src="/video.mp4" type="video/mp4"></source>
               </video>
             </div>
-            <div
-              className={styles['video-content-block']}
-            >
-              <div className= {styles['video-title-name']}>
+            <div className={styles["video-content-block"]}>
+              <div className={styles["video-title-name"]}>
                 <h3>Video Title - Lorem Ipsum</h3>
               </div>
               <div className="video-description">
@@ -35,33 +36,11 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles["video-play-btn"]}>
-                <Button type="button" className={styles["play-btn"]} variant="outlined">
-                  Watch Now
-                </Button>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.card}>
-            <div className={styles["video-block"]} >
-              <video>
-                <source src="/video.mp4" type="video/mp4"></source>
-              </video>
-            </div>
-            <div
-              className={styles['video-content-block']}
-            >
-              <div className= {styles['video-title-name']}>
-                <h3>Video Title - Lorem Ipsum</h3>
-              </div>
-              <div className="video-description">
-                <p>
-                  Introduction to Deceptive Sexuality and Trauma (DST).
-                  Sexuality and Trauma (DST).Sexuality and Trauma (DST).
-                </p>
-              </div>
-              <div className={styles["video-play-btn"]}>
-                <Button type="button" className={styles["play-btn"]} variant="outlined">
+                <Button
+                  type="button"
+                  className={styles["play-btn"]}
+                  variant="outlined"
+                >
                   Watch Now
                 </Button>
               </div>
@@ -74,10 +53,8 @@ export default function Home() {
                 <source src="/video.mp4" type="video/mp4"></source>
               </video>
             </div>
-            <div
-              className={styles['video-content-block']}
-            >
-              <div className= {styles['video-title-name']}>
+            <div className={styles["video-content-block"]}>
+              <div className={styles["video-title-name"]}>
                 <h3>Video Title - Lorem Ipsum</h3>
               </div>
               <div className="video-description">
@@ -87,7 +64,11 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles["video-play-btn"]}>
-                <Button type="button" className={styles["play-btn"]} variant="outlined">
+                <Button
+                  type="button"
+                  className={styles["play-btn"]}
+                  variant="outlined"
+                >
                   Watch Now
                 </Button>
               </div>
@@ -95,15 +76,13 @@ export default function Home() {
           </div>
 
           <div className={styles.card}>
-            <div className={styles["video-block"]} >
+            <div className={styles["video-block"]}>
               <video>
                 <source src="/video.mp4" type="video/mp4"></source>
               </video>
             </div>
-            <div
-              className={styles['video-content-block']}
-            >
-              <div className= {styles['video-title-name']}>
+            <div className={styles["video-content-block"]}>
+              <div className={styles["video-title-name"]}>
                 <h3>Video Title - Lorem Ipsum</h3>
               </div>
               <div className="video-description">
@@ -113,7 +92,11 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles["video-play-btn"]}>
-                <Button type="button" className={styles["play-btn"]} variant="outlined">
+                <Button
+                  type="button"
+                  className={styles["play-btn"]}
+                  variant="outlined"
+                >
                   Watch Now
                 </Button>
               </div>
@@ -121,15 +104,13 @@ export default function Home() {
           </div>
 
           <div className={styles.card}>
-            <div className={styles["video-block"]} >
+            <div className={styles["video-block"]}>
               <video>
                 <source src="/video.mp4" type="video/mp4"></source>
               </video>
             </div>
-            <div
-              className={styles['video-content-block']}
-            >
-              <div className= {styles['video-title-name']}>
+            <div className={styles["video-content-block"]}>
+              <div className={styles["video-title-name"]}>
                 <h3>Video Title - Lorem Ipsum</h3>
               </div>
               <div className="video-description">
@@ -139,7 +120,11 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles["video-play-btn"]}>
-                <Button type="button" className={styles["play-btn"]} variant="outlined">
+                <Button
+                  type="button"
+                  className={styles["play-btn"]}
+                  variant="outlined"
+                >
                   Watch Now
                 </Button>
               </div>
@@ -147,15 +132,13 @@ export default function Home() {
           </div>
 
           <div className={styles.card}>
-            <div className={styles["video-block"]} >
+            <div className={styles["video-block"]}>
               <video>
                 <source src="/video.mp4" type="video/mp4"></source>
               </video>
             </div>
-            <div
-              className={styles['video-content-block']}
-            >
-              <div className= {styles['video-title-name']}>
+            <div className={styles["video-content-block"]}>
+              <div className={styles["video-title-name"]}>
                 <h3>Video Title - Lorem Ipsum</h3>
               </div>
               <div className="video-description">
@@ -165,7 +148,39 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles["video-play-btn"]}>
-                <Button type="button" className={styles["play-btn"]} variant="outlined">
+                <Button
+                  type="button"
+                  className={styles["play-btn"]}
+                  variant="outlined"
+                >
+                  Watch Now
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles["video-block"]}>
+              <video>
+                <source src="/video.mp4" type="video/mp4"></source>
+              </video>
+            </div>
+            <div className={styles["video-content-block"]}>
+              <div className={styles["video-title-name"]}>
+                <h3>Video Title - Lorem Ipsum</h3>
+              </div>
+              <div className="video-description">
+                <p>
+                  Introduction to Deceptive Sexuality and Trauma (DST).
+                  Sexuality and Trauma (DST).Sexuality and Trauma (DST).
+                </p>
+              </div>
+              <div className={styles["video-play-btn"]}>
+                <Button
+                  type="button"
+                  className={styles["play-btn"]}
+                  variant="outlined"
+                >
                   Watch Now
                 </Button>
               </div>

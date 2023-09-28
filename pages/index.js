@@ -15,8 +15,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles["page-title"]}>
-          <h1>Tutorial</h1>
+        <div className={styles["page-header"]}>
+          <div className={styles["page-title"]}>
+          <h1>Tutorials</h1>
+          </div>
         </div>
         <div className={styles.grid}>
           <div className={styles.card}>

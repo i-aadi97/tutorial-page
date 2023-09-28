@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   padding: 6rem;
+  width: 100%;
+  max-width: 1440px;
   min-height: 100vh;
+  margin: 0 auto;
 }
 
 .grid {
@@ -15,7 +17,15 @@
   grid-row-gap: 20px;
   width: 100%;
 }
+.page-header{
+  padding-bottom:20px;
+  display: block;
+}
+.page-header .page-title h1{
+  color: #123472;
+  font-size: 32px;
 
+}
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
